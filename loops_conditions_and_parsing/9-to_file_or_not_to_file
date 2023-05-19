@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 # Write a script that gives information about the school file
 
-if [[ -e "school" ]]
+if [ -e "school" ]
 then
 	echo "school file exists"
-	if [[ -s "school" ]]
+	if [ -s "school" ]
 then 
 	echo "the school file is not empty"
 else
 	echo "the school file is empty"
 	fi
-	if [[ -f "school" ]]
+	if [ -f "school" ]
 then
-	echo "school is a regular file"
+	echo "school is a regular fiile"
 	fi
 else 
 	echo "school file does not exsist"
