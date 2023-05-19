@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Write a script that displays the current working directory
+
+for file in $(ls);
+do
+	echo $file
+done
