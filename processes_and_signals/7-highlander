@@ -1,15 +1,12 @@
 #!/usr/bin/env bash
 # Write a Bash script that displays:
-To infinity and beyond indefinitely
 
-function sigterm_handler() {
-	echo "I am invincible!!!"
-	exit 0
-}
-
-trap 'sigterm_handler'  SIGTERM
-
-while true; do
+trap "echo I am Invincible!!!"
+SIGTERM
+x=1
+while [ "$x" -gt 0 ]
+do
 	echo "To infinity and beyond"
+	x=$((x+1))
 	sleep 2
 done
