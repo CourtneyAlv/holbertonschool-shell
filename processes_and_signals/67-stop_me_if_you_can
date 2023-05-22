@@ -1,14 +1,4 @@
 #!/usr/bin/env bash
-# Write a Bash script that stops 4-to_infinity_and_beyond process.
-# You cannot use kill or killall
+# Write a Bash script
 
-while true
-do
-	echo "To infinity and beyond"
-	sleep 2
-	if ! pgrep -x "4-to_infinity_and_beyond" > /dev/null
-	then
-		exit 0
-	fi
-done
-
+pkill -f "7-highlander"

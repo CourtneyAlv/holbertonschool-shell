@@ -2,12 +2,12 @@
 # Write a Bash script that displays:
 To infinity and beyond indefinitely
 
-handle_sigterm() {
-	echo "I am invinvible!!!"
+function sigterm_handler() {
+	echo "I am invincible!!!"
 	exit 0
 }
 
-trap 'handle_sigterm' SIGTERM
+trap 'sigterm_handler'  SIGTERM
 
 while true; do
 	echo "To infinity and beyond"
