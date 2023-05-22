@@ -2,8 +2,14 @@
 # Write a Bash script that displays:
 To infinity and beyond indefinitely
 
-trap 'echo "I am invincible!!!"; exit 0' SIGTERM
+handle_sigterm() {
+	echo "I am invinvible!!!"
+	exit 0
+}
+
+trap 'handle_sigterm' SIGTERM
+
 while true; do
-	echo " To infinity and beyond"
-sleep 2
+	echo "To infinity and beyond"
+	sleep 2
 done
